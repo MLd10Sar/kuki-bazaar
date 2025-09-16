@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);">
+  <defs>
+    <!-- Cookie Gradient -->
+    <radialGradient id="walnutDateGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CD853F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Walnut Gradient -->
+    <radialGradient id="walnutGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#D2B48C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Date Gradient -->
+    <radialGradient id="dateGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background Texture -->
+  <g fill="#8B4513" opacity="0.1">
+    <rect x="50" y="50" width="15" height="15" transform="rotate(45 57 57)"/>
+    <rect x="150" y="80" width="12" height="12" transform="rotate(30 156 86)"/>
+    <rect x="600" y="60" width="14" height="14" transform="rotate(60 607 67)"/>
+    <rect x="650" y="450" width="13" height="13" transform="rotate(-30 656 456)"/>
+  </g>
+  
+  <!-- Main Cookie -->
+  <circle cx="400" cy="300" r="120" fill="url(#walnutDateGrad)" stroke="#A0522D" stroke-width="3"/>
+  
+  <!-- Cookie Texture -->
+  <circle cx="380" cy="275" r="8" fill="#A0522D" opacity="0.6"/>
+  <circle cx="420" cy="285" r="6" fill="#A0522D" opacity="0.6"/>
+  <circle cx="395" cy="320" r="7" fill="#A0522D" opacity="0.6"/>
+  <circle cx="415" cy="325" r="5" fill="#A0522D" opacity="0.6"/>
+  <circle cx="385" cy="345" r="6" fill="#A0522D" opacity="0.6"/>
+  
+  <!-- Walnut Pieces -->
+  <g fill="url(#walnutGrad)">
+    <path d="M360 265 Q365 260 370 265 Q368 270 365 275 Q362 270 360 265" opacity="0.9"/>
+    <path d="M430 285 Q435 280 440 285 Q438 290 435 295 Q432 290 430 285" opacity="0.9"/>
+    <path d="M375 310 Q380 305 385 310 Q383 315 380 320 Q377 315 375 310" opacity="0.9"/>
+    <path d="M420 315 Q425 310 430 315 Q428 320 425 325 Q422 320 420 315" opacity="0.9"/>
+    <path d="M390 335 Q395 330 400 335 Q398 340 395 345 Q392 340 390 335" opacity="0.9"/>
+  </g>
+  
+  <!-- Date Pieces -->
+  <g fill="url(#dateGrad)">
+    <ellipse cx="370" cy="280" rx="6" ry="10" opacity="0.8"/>
+    <ellipse cx="425" cy="300" rx="5" ry="8" opacity="0.8"/>
+    <ellipse cx="385" cy="325" rx="7" ry="9" opacity="0.8"/>
+    <ellipse cx="410" cy="340" rx="6" ry="8" opacity="0.8"/>
+  </g>
+  
+  <!-- Scattered Walnuts -->
+  <g fill="url(#walnutGrad)" opacity="0.8">
+    <path d="M250 220 Q255 215 260 220 Q258 225 255 230 Q252 225 250 220"/>
+    <path d="M540 200 Q545 195 550 200 Q548 205 545 210 Q542 205 540 200"/>
+    <path d="M580 380 Q585 375 590 380 Q588 385 585 390 Q582 385 580 380"/>
+    <path d="M220 380 Q225 375 230 380 Q228 385 225 390 Q222 385 220 380"/>
+  </g>
+  
+  <!-- Scattered Dates -->
+  <g fill="url(#dateGrad)" opacity="0.7">
+    <ellipse cx="280" cy="180" rx="4" ry="7"/>
+    <ellipse cx="520" cy="160" rx="5" ry="8"/>
+    <ellipse cx="600" cy="420" rx="4" ry="6"/>
+    <ellipse cx="200" cy="440" rx="5" ry="7"/>
+  </g>
+  
+  <!-- Cinnamon Swirls -->
+  <g stroke="#D2691E" stroke-width="3" fill="none" opacity="0.6">
+    <path d="M300 150 Q320 160 340 150 Q360 140 380 150"/>
+    <path d="M420 450 Q440 440 460 450 Q480 460 500 450"/>
+  </g>
+  
+  <!-- Sparkles -->
+  <g fill="#DAA520">
+    <polygon points="200,120 202,128 210,128 204,132 206,140 200,136 194,140 196,132 190,128 198,128" opacity="0.8"/>
+    <polygon points="600,100 603,110 613,110 605,116 608,126 600,120 592,126 595,116 587,110 597,110" opacity="0.9"/>
+    <polygon points="650,480 652,486 658,486 654,490 656,496 650,492 644,496 646,490 642,486 648,486" opacity="0.7"/>
+    <polygon points="150,460 152,466 158,466 154,470 156,476 150,472 144,476 146,470 142,466 148,466" opacity="0.8"/>
+  </g>
+  
+  <!-- Traditional Elements -->
+  <g stroke="#8B4513" stroke-width="2" fill="none" opacity="0.4">
+    <polygon points="80,80 100,60 120,80 100,100"/>
+    <polygon points="680,80 700,60 720,80 700,100"/>
+    <polygon points="80,520 100,500 120,520 100,540"/>
+    <polygon points="680,520 700,500 720,520 700,540"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="500" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="#F5DEB3">
+    Walnut Date Symphony
+  </text>
+  <text x="400" y="530" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#F5DEB3" opacity="0.9">
+    Rich Cookies with Premium Walnuts & Sweet Dates from Kandahar
+  </text>
+</svg>

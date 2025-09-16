@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background: linear-gradient(135deg, #DAA520 0%, #FFD700 50%, #F4A460 100%);">
+  <defs>
+    <!-- Honey Cookie Gradient -->
+    <radialGradient id="honeyGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#FFE4B5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Almond Gradient -->
+    <radialGradient id="almondGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#F5DEB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEB887;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Honey Drizzle Gradient -->
+    <linearGradient id="honeyDrizzle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Honey Comb Pattern -->
+  <g fill="#FFD700" opacity="0.1">
+    <polygon points="100,100 120,90 140,100 140,120 120,130 100,120"/>
+    <polygon points="200,150 220,140 240,150 240,170 220,180 200,170"/>
+    <polygon points="600,80 620,70 640,80 640,100 620,110 600,100"/>
+    <polygon points="650,400 670,390 690,400 690,420 670,430 650,420"/>
+  </g>
+  
+  <!-- Main Cookie -->
+  <circle cx="400" cy="300" r="118" fill="url(#honeyGrad)" stroke="#D2691E" stroke-width="3"/>
+  
+  <!-- Cookie Texture -->
+  <circle cx="380" cy="280" r="7" fill="#CD853F" opacity="0.6"/>
+  <circle cx="420" cy="290" r="6" fill="#CD853F" opacity="0.6"/>
+  <circle cx="395" cy="320" r="8" fill="#CD853F" opacity="0.6"/>
+  <circle cx="415" cy="325" r="5" fill="#CD853F" opacity="0.6"/>
+  <circle cx="385" cy="345" r="6" fill="#CD853F" opacity="0.6"/>
+  
+  <!-- Almond Slices -->
+  <ellipse cx="365" cy="270" rx="10" ry="4" fill="url(#almondGrad)" transform="rotate(25 365 270)"/>
+  <ellipse cx="435" cy="285" rx="9" ry="4" fill="url(#almondGrad)" transform="rotate(-15 435 285)"/>
+  <ellipse cx="375" cy="310" rx="8" ry="3" fill="url(#almondGrad)" transform="rotate(45 375 310)"/>
+  <ellipse cx="425" cy="315" rx="11" ry="4" fill="url(#almondGrad)" transform="rotate(-30 425 315)"/>
+  <ellipse cx="390" cy="335" rx="7" ry="3" fill="url(#almondGrad)" transform="rotate(60 390 335)"/>
+  <ellipse cx="410" cy="345" rx="9" ry="4" fill="url(#almondGrad)" transform="rotate(-45 410 345)"/>
+  
+  <!-- Honey Drizzle -->
+  <path d="M320 180 Q340 200 360 190 Q380 180 400 195 Q420 210 440 200 Q460 190 480 205" 
+        stroke="url(#honeyDrizzle)" stroke-width="6" fill="none" opacity="0.8"/>
+  <path d="M300 400 Q320 410 340 405 Q360 400 380 410 Q400 420 420 415 Q440 410 460 420" 
+        stroke="url(#honeyDrizzle)" stroke-width="5" fill="none" opacity="0.7"/>
+  
+  <!-- Scattered Almonds -->
+  <g fill="url(#almondGrad)" opacity="0.9">
+    <ellipse cx="250" cy="220" rx="8" ry="3" transform="rotate(30 250 220)"/>
+    <ellipse cx="550" cy="200" rx="7" ry="3" transform="rotate(-20 550 200)"/>
+    <ellipse cx="580" cy="350" rx="9" ry="4" transform="rotate(50 580 350)"/>
+    <ellipse cx="220" cy="380" rx="8" ry="3" transform="rotate(-40 220 380)"/>
+    <ellipse cx="600" cy="450" rx="7" ry="3" transform="rotate(70 600 450)"/>
+  </g>
+  
+  <!-- Honey Drops -->
+  <g fill="#FFD700">
+    <circle cx="300" cy="150" r="4" opacity="0.8"/>
+    <circle cx="500" cy="130" r="3" opacity="0.7"/>
+    <circle cx="520" cy="470" r="5" opacity="0.8"/>
+    <circle cx="280" cy="450" r="3" opacity="0.7"/>
+  </g>
+  
+  <!-- Sparkles -->
+  <g fill="#FFD700">
+    <polygon points="200,100 202,108 210,108 204,112 206,120 200,116 194,120 196,112 190,108 198,108" opacity="0.9"/>
+    <polygon points="600,80 603,90 613,90 605,96 608,106 600,100 592,106 595,96 587,90 597,90" opacity="0.8"/>
+    <polygon points="650,500 652,506 658,506 654,510 656,516 650,512 644,516 646,510 642,506 648,506" opacity="0.9"/>
+    <polygon points="150,480 152,486 158,486 154,490 156,496 150,492 144,496 146,490 142,486 148,486" opacity="0.7"/>
+  </g>
+  
+  <!-- Traditional Elements -->
+  <g stroke="#D2691E" stroke-width="2" fill="none" opacity="0.4">
+    <circle cx="120" cy="120" r="20"/>
+    <circle cx="680" cy="120" r="15"/>
+    <circle cx="120" cy="480" r="18"/>
+    <circle cx="680" cy="480" r="16"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="500" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="#264653">
+    Honey Almond Treasure
+  </text>
+  <text x="400" y="530" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#264653" opacity="0.8">
+    Sweet Honey Cookies with Crushed Almonds from Mazar-i-Sharif
+  </text>
+</svg>
