@@ -7,21 +7,13 @@ const nextConfig: NextConfig = {
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     unoptimized: false,
+    domains: ['images.unsplash.com'],
   },
   
-  // Performance optimizations
-  experimental: {
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
-  },
+  // Ensure static export works properly
+  trailingSlash: false,
   
-  // Faster builds
+  // Build optimizations
   typescript: {
     ignoreBuildErrors: false,
   },
