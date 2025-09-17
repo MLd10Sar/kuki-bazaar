@@ -19,7 +19,7 @@ export default function Shop() {
       name: "Saffron Rose Delight",
       description: "Traditional Afghan cookies infused with precious saffron and delicate rose water, inspired by the royal kitchens of Kabul.",
       price: 18.99,
-      image: "/cookies/saffron-rose.jpg",
+      image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop&crop=center",
       heritage: "Inspired by Kabul's royal kitchens",
       ingredients: ["Saffron", "Rose Water", "Almonds", "Flour", "Butter"],
       inStock: true
@@ -27,9 +27,9 @@ export default function Shop() {
     {
       id: 2,
       name: "Cardamom Pistachio Dream",
-      description: "Aromatic cardamom cookies loaded with premium Afghan pistachios, a Herat family recipe passed down through generations.",
+      description: "Aromatic cardamom cookies loaded with premium Afghan pistachios, a treasured Herat family recipe passed down through generations and perfected with ancient spice blending techniques that create an unforgettable flavor symphony.",
       price: 16.99,
-      image: "/cookies/cardamom-pistachio.jpg",
+      image: "https://images.unsplash.com/photo-1548907040-4baa42d10919?w=400&h=300&fit=crop&crop=center",
       heritage: "A Herat family recipe",
       ingredients: ["Cardamom", "Pistachios", "Honey", "Flour", "Ghee"],
       inStock: true
@@ -39,7 +39,7 @@ export default function Shop() {
       name: "Honey Almond Treasure",
       description: "Sweet honey cookies with crushed almonds, celebrating Afghan hospitality from the bazaars of Mazar-i-Sharif.",
       price: 15.99,
-      image: "/cookies/honey-almond.jpg",
+      image: "/cookies/honey-almond-authentic.PNG",
       heritage: "From the bazaars of Mazar-i-Sharif",
       ingredients: ["Wild Honey", "Almonds", "Sesame", "Flour", "Butter"],
       inStock: true
@@ -49,7 +49,7 @@ export default function Shop() {
       name: "Rosewater Coconut Bliss",
       description: "Delicate rosewater cookies with tropical coconut, representing contemporary Afghan artistry and fusion flavors.",
       price: 17.99,
-      image: "/cookies/rosewater-coconut.jpg",
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop&crop=center",
       heritage: "Contemporary Afghan artistry",
       ingredients: ["Rose Water", "Coconut", "Pistachios", "Flour", "Butter"],
       inStock: true
@@ -57,9 +57,9 @@ export default function Shop() {
     {
       id: 5,
       name: "Walnut Date Symphony",
-      description: "Rich cookies combining premium walnuts with sweet dates, a traditional Kandahar recipe celebrating harvest seasons.",
+      description: "Rich, indulgent cookies combining premium walnuts with sweet dates, a treasured traditional Kandahar recipe celebrating harvest seasons and ancient Afghan hospitality passed down through generations of master bakers.",
       price: 19.99,
-      image: "/cookies/walnut-date.jpg",
+      image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=300&fit=crop&crop=center",
       heritage: "Traditional Kandahar recipe",
       ingredients: ["Walnuts", "Dates", "Cinnamon", "Flour", "Ghee"],
       inStock: true
@@ -69,10 +69,20 @@ export default function Shop() {
       name: "Pomegranate Surprise",
       description: "Unique cookies featuring dried pomegranate seeds and a hint of mint, representing the gardens of Herat.",
       price: 20.99,
-      image: "/cookies/pomegranate.jpg",
+      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop&crop=center",
       heritage: "Gardens of Herat inspiration",
       ingredients: ["Pomegranate", "Mint", "Almonds", "Flour", "Butter"],
       inStock: false
+    },
+    {
+      id: 7,
+      name: "کلچه بدخشانی - Kulcha Badakhshani",
+      description: "Authentic mountain cookies from Badakhshan province, crafted with lapis lazuli-blue herbs and mineral-rich ingredients from the Pamir mountains.",
+      price: 22.99,
+      image: "/cookies/kulcha-badakhshani-authentic.PNG",
+      heritage: "Ancient recipe from the Roof of the World - Badakhshan",
+      ingredients: ["Mountain Herbs", "Sesame Seeds", "Rock Salt", "Wild Honey", "Ancient Grains"],
+      inStock: true
     }
   ];
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background: linear-gradient(135deg, #f0f8e8 0%, #e8f0e0 100%);">
+  <defs>
+    <radialGradient id="cardamomCookie" cx="40%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#e8d5b7;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#d4af85;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#c19a6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a67c5a;stop-opacity:1" />
+    </radialGradient>
+    <filter id="cardamomShadow">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#654321" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Rustic background -->
+  <rect width="800" height="600" fill="#e8f0e0"/>
+  
+  <!-- Cardamom pistachio cookies -->
+  <ellipse cx="180" cy="170" rx="80" ry="70" fill="url(#cardamomCookie)" filter="url(#cardamomShadow)"/>
+  <ellipse cx="450" cy="180" rx="75" ry="65" fill="url(#cardamomCookie)" filter="url(#cardamomShadow)" transform="rotate(25 450 180)"/>
+  <ellipse cx="320" cy="340" rx="85" ry="75" fill="url(#cardamomCookie)" filter="url(#cardamomShadow)" transform="rotate(-10 320 340)"/>
+  <ellipse cx="600" cy="300" rx="70" ry="60" fill="url(#cardamomCookie)" filter="url(#cardamomShadow)" transform="rotate(40 600 300)"/>
+  
+  <!-- Pistachio pieces -->
+  <ellipse cx="170" cy="160" rx="5" ry="3" fill="#90ee90" transform="rotate(30 170 160)"/>
+  <ellipse cx="190" cy="180" rx="4" ry="2.5" fill="#228b22" transform="rotate(-20 190 180)"/>
+  <ellipse cx="440" cy="170" rx="5" ry="3" fill="#90ee90" transform="rotate(45 440 170)"/>
+  <ellipse cx="460" cy="190" rx="4" ry="2.5" fill="#228b22" transform="rotate(-15 460 190)"/>
+  <ellipse cx="310" cy="330" rx="5" ry="3" fill="#90ee90" transform="rotate(60 310 330)"/>
+  <ellipse cx="330" cy="350" rx="4" ry="2.5" fill="#228b22" transform="rotate(-25 330 350)"/>
+  <ellipse cx="590" cy="290" rx="4" ry="2.5" fill="#90ee90" transform="rotate(50 590 290)"/>
+  <ellipse cx="610" cy="310" rx="3.5" ry="2" fill="#228b22" transform="rotate(-10 610 310)"/>
+  
+  <!-- Cardamom pods -->
+  <ellipse cx="185" cy="175" rx="2" ry="6" fill="#6b8e23" transform="rotate(15 185 175)"/>
+  <ellipse cx="455" cy="185" rx="1.8" ry="5.5" fill="#6b8e23" transform="rotate(40 455 185)"/>
+  <ellipse cx="325" cy="345" rx="2" ry="6" fill="#6b8e23" transform="rotate(-20 325 345)"/>
+  <ellipse cx="605" cy="305" rx="1.5" ry="5" fill="#6b8e23" transform="rotate(55 605 305)"/>
+  
+  <!-- Surface textures -->
+  <g opacity="0.3">
+    <circle cx="165" cy="155" r="2" fill="#a67c5a"/>
+    <circle cx="195" cy="175" r="1.5" fill="#a67c5a"/>
+    <circle cx="435" cy="165" r="2" fill="#a67c5a"/>
+    <circle cx="465" cy="185" r="1.5" fill="#a67c5a"/>
+    <circle cx="305" cy="325" r="2" fill="#a67c5a"/>
+    <circle cx="335" cy="345" r="1.5" fill="#a67c5a"/>
+    <circle cx="585" cy="285" r="1.5" fill="#a67c5a"/>
+    <circle cx="615" cy="305" r="1" fill="#a67c5a"/>
+  </g>
+</svg>

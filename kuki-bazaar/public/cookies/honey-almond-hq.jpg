@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background: linear-gradient(135deg, #fdf6e3 0%, #f4e4bc 100%);">
+  <defs>
+    <radialGradient id="cookieGradHoney" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#daa520;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#cd853f;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#8b7355;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="honeyGrad" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:0.7" />
+    </radialGradient>
+    <radialGradient id="almondGrad" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#f5deb3;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#deb887;stop-opacity:0.8" />
+    </radialGradient>
+    <filter id="shadow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background texture -->
+  <rect width="400" height="300" fill="url(#cookieGradHoney)" opacity="0.1"/>
+  
+  <!-- Main cookies -->
+  <ellipse cx="160" cy="125" rx="54" ry="44" fill="url(#cookieGradHoney)" filter="url(#shadow3)" transform="rotate(-12 160 125)"/>
+  <ellipse cx="240" cy="100" rx="50" ry="40" fill="url(#cookieGradHoney)" filter="url(#shadow3)" transform="rotate(18 240 100)"/>
+  <ellipse cx="200" cy="185" rx="52" ry="42" fill="url(#cookieGradHoney)" filter="url(#shadow3)" transform="rotate(-6 200 185)"/>
+  
+  <!-- Cookie textures -->
+  <circle cx="145" cy="120" r="2.8" fill="#8b7355"/>
+  <circle cx="165" cy="135" r="2.2" fill="#cd853f"/>
+  <circle cx="175" cy="115" r="2.5" fill="#8b7355"/>
+  <circle cx="150" cy="140" r="1.9" fill="#cd853f"/>
+  
+  <circle cx="225" cy="95" r="2.4" fill="#8b7355"/>
+  <circle cx="250" cy="110" r="2.1" fill="#cd853f"/>
+  <circle cx="235" cy="85" r="2" fill="#8b7355"/>
+  <circle cx="255" cy="105" r="1.7" fill="#cd853f"/>
+  
+  <circle cx="185" cy="175" r="2.3" fill="#8b7355"/>
+  <circle cx="210" cy="190" r="2.6" fill="#cd853f"/>
+  <circle cx="215" cy="180" r="1.8" fill="#8b7355"/>
+  <circle cx="190" cy="200" r="2.1" fill="#cd853f"/>
+  
+  <!-- Honey drizzle effect -->
+  <path d="M140 105 Q145 110 150 125 Q155 140 160 155" stroke="url(#honeyGrad)" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <path d="M230 80 Q235 85 240 100 Q245 115 250 130" stroke="url(#honeyGrad)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M180 160 Q185 165 190 180 Q195 195 200 210" stroke="url(#honeyGrad)" stroke-width="2.3" fill="none" opacity="0.8"/>
+  
+  <!-- Honey drops -->
+  <ellipse cx="155" cy="110" rx="2" ry="3" fill="url(#honeyGrad)" opacity="0.9"/>
+  <ellipse cx="245" cy="90" rx="1.8" ry="2.5" fill="url(#honeyGrad)" opacity="0.8"/>
+  <ellipse cx="195" cy="170" rx="2.2" ry="3.2" fill="url(#honeyGrad)" opacity="0.9"/>
+  <ellipse cx="170" cy="130" rx="1.5" ry="2" fill="url(#honeyGrad)" opacity="0.7"/>
+  
+  <!-- Almond slices -->
+  <ellipse cx="148" cy="125" rx="4" ry="2" fill="url(#almondGrad)" transform="rotate(35 148 125)" opacity="0.9"/>
+  <ellipse cx="255" cy="105" rx="3.5" ry="1.8" fill="url(#almondGrad)" transform="rotate(-20 255 105)" opacity="0.8"/>
+  <ellipse cx="205" cy="180" rx="4.2" ry="2.2" fill="url(#almondGrad)" transform="rotate(45 205 180)" opacity="0.9"/>
+  <ellipse cx="165" cy="115" rx="3.8" ry="2" fill="url(#almondGrad)" transform="rotate(-15 165 115)" opacity="0.8"/>
+  <ellipse cx="230" cy="95" rx="3.2" ry="1.6" fill="url(#almondGrad)" transform="rotate(60 230 95)" opacity="0.7"/>
+  <ellipse cx="220" cy="190" rx="3.6" ry="1.9" fill="url(#almondGrad)" transform="rotate(-25 220 190)" opacity="0.8"/>
+  
+  <!-- Scattered almond pieces -->
+  <ellipse cx="180" cy="140" rx="2" ry="1" fill="#f5deb3" transform="rotate(20 180 140)" opacity="0.7"/>
+  <ellipse cx="260" cy="120" rx="1.8" ry="0.9" fill="#deb887" transform="rotate(-30 260 120)" opacity="0.6"/>
+  <ellipse cx="185" cy="200" rx="2.1" ry="1.1" fill="#f5deb3" transform="rotate(35 185 200)" opacity="0.8"/>
+  
+  <!-- Decorative sparkles -->
+  <g filter="url(#glow3)">
+    <path d="M90 80 L92 85 L97 83 L92 88 L90 93 L88 88 L83 83 L88 85 Z" fill="#ffd700" opacity="0.8"/>
+    <path d="M310 70 L312 75 L317 73 L312 78 L310 83 L308 78 L303 73 L308 75 Z" fill="#f5deb3" opacity="0.7"/>
+    <path d="M70 210 L72 215 L77 213 L72 218 L70 223 L68 218 L63 213 L68 215 Z" fill="#ffd700" opacity="0.6"/>
+    <path d="M330 240 L332 245 L337 243 L332 248 L330 253 L328 248 L323 243 L328 245 Z" fill="#f5deb3" opacity="0.8"/>
+  </g>
+  
+  <!-- Elegant text overlay -->
+  <text x="200" y="50" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#8B4513" opacity="0.8">Honey Almond Treasure</text>
+  <text x="200" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#8B4513" opacity="0.6">Golden Afghan Hospitality</text>
+</svg>

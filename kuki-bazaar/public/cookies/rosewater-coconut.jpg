@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background: linear-gradient(135deg, #FFB6C1 0%, #FFF8DC 50%, #F0E68C 100%);">
+  <defs>
+    <!-- Cookie Gradient -->
+    <radialGradient id="roseCoconutGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5DEB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEB887;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Rose Gradient -->
+    <radialGradient id="roseGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FF69B4;stop-opacity:0.7" />
+    </radialGradient>
+    
+    <!-- Coconut Flake Pattern -->
+    <pattern id="coconutPattern" patternUnits="userSpaceOnUse" width="30" height="30">
+      <ellipse cx="15" cy="15" rx="2" ry="1" fill="#FFFFFF" opacity="0.6" transform="rotate(45 15 15)"/>
+      <ellipse cx="8" cy="22" rx="1.5" ry="1" fill="#FFFFFF" opacity="0.5" transform="rotate(-30 8 22)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#coconutPattern)" opacity="0.3"/>
+  
+  <!-- Main Cookie -->
+  <circle cx="400" cy="300" r="116" fill="url(#roseCoconutGrad)" stroke="#DEB887" stroke-width="3"/>
+  
+  <!-- Cookie Texture -->
+  <circle cx="375" cy="275" r="6" fill="#F5DEB3" opacity="0.7"/>
+  <circle cx="425" cy="285" r="5" fill="#F5DEB3" opacity="0.7"/>
+  <circle cx="390" cy="315" r="7" fill="#F5DEB3" opacity="0.7"/>
+  <circle cx="415" cy="320" r="4" fill="#F5DEB3" opacity="0.7"/>
+  <circle cx="395" cy="340" r="5" fill="#F5DEB3" opacity="0.7"/>
+  
+  <!-- Coconut Flakes -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <ellipse cx="365" cy="265" rx="4" ry="2" transform="rotate(30 365 265)"/>
+    <ellipse cx="435" cy="280" rx="3" ry="2" transform="rotate(-45 435 280)"/>
+    <ellipse cx="380" cy="305" rx="5" ry="2" transform="rotate(60 380 305)"/>
+    <ellipse cx="420" cy="310" rx="4" ry="2" transform="rotate(-20 420 310)"/>
+    <ellipse cx="390" cy="330" rx="3" ry="2" transform="rotate(45 390 330)"/>
+    <ellipse cx="410" cy="340" rx="4" ry="2" transform="rotate(-60 410 340)"/>
+  </g>
+  
+  <!-- Rose Petals -->
+  <g fill="url(#roseGradient)">
+    <ellipse cx="300" cy="180" rx="30" ry="18" transform="rotate(-20 300 180)" opacity="0.8"/>
+    <ellipse cx="280" cy="200" rx="25" ry="15" transform="rotate(10 280 200)" opacity="0.7"/>
+    <ellipse cx="520" cy="160" rx="28" ry="16" transform="rotate(40 520 160)" opacity="0.8"/>
+    <ellipse cx="540" cy="180" rx="22" ry="14" transform="rotate(-10 540 180)" opacity="0.7"/>
+    <ellipse cx="580" cy="400" rx="26" ry="16" transform="rotate(-50 580 400)" opacity="0.8"/>
+    <ellipse cx="200" cy="420" rx="24" ry="15" transform="rotate(30 200 420)" opacity="0.7"/>
+  </g>
+  
+  <!-- Scattered Coconut Flakes -->
+  <g fill="#FFFFFF" opacity="0.7">
+    <ellipse cx="250" cy="250" rx="3" ry="1" transform="rotate(20 250 250)"/>
+    <ellipse cx="550" cy="280" rx="4" ry="2" transform="rotate(-30 550 280)"/>
+    <ellipse cx="600" cy="350" rx="3" ry="1" transform="rotate(70 600 350)"/>
+    <ellipse cx="200" cy="350" rx="4" ry="2" transform="rotate(-60 200 350)"/>
+    <ellipse cx="580" cy="220" rx="3" ry="1" transform="rotate(40 580 220)"/>
+  </g>
+  
+  <!-- Rose Water Drops -->
+  <g fill="#FFB6C1" opacity="0.6">
+    <circle cx="320" cy="140" r="3"/>
+    <circle cx="480" cy="120" r="2"/>
+    <circle cx="550" cy="480" r="4"/>
+    <circle cx="250" cy="460" r="3"/>
+  </g>
+  
+  <!-- Sparkles -->
+  <g fill="#FF69B4">
+    <polygon points="180,80 182,88 190,88 184,92 186,100 180,96 174,100 176,92 170,88 178,88" opacity="0.8"/>
+    <polygon points="620,60 623,70 633,70 625,76 628,86 620,80 612,86 615,76 607,70 617,70" opacity="0.9"/>
+    <polygon points="650,520 652,526 658,526 654,530 656,536 650,532 644,536 646,530 642,526 648,526" opacity="0.7"/>
+    <polygon points="120,500 122,506 128,506 124,510 126,516 120,512 114,516 116,510 112,506 118,506" opacity="0.8"/>
+  </g>
+  
+  <!-- Delicate Border -->
+  <g stroke="#FFB6C1" stroke-width="2" fill="none" opacity="0.5">
+    <circle cx="100" cy="100" r="15"/>
+    <circle cx="700" cy="100" r="12"/>
+    <circle cx="100" cy="500" r="14"/>
+    <circle cx="700" cy="500" r="13"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="500" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="#264653">
+    Rosewater Coconut Bliss
+  </text>
+  <text x="400" y="530" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#264653" opacity="0.8">
+    Delicate Rosewater Cookies with Tropical Coconut Fusion
+  </text>
+</svg>

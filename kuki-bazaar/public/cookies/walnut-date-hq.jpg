@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background: linear-gradient(135deg, #f5f0e8 0%, #ede0d3 100%);">
+  <defs>
+    <radialGradient id="walnutCookie" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#a0522d;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:0.8" />
+    </radialGradient>
+    <radialGradient id="dateGrad" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:0.7" />
+    </radialGradient>
+    <filter id="shadow5" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <ellipse cx="160" cy="120" rx="55" ry="45" fill="url(#walnutCookie)" filter="url(#shadow5)" transform="rotate(-15 160 120)"/>
+  <ellipse cx="240" cy="105" rx="50" ry="40" fill="url(#walnutCookie)" filter="url(#shadow5)" transform="rotate(12 240 105)"/>
+  <ellipse cx="200" cy="185" rx="52" ry="42" fill="url(#walnutCookie)" filter="url(#shadow5)" transform="rotate(-8 200 185)"/>
+  
+  <!-- Walnut pieces -->
+  <ellipse cx="150" cy="115" rx="4" ry="3" fill="#deb887" transform="rotate(30 150 115)" opacity="0.9"/>
+  <ellipse cx="245" cy="100" rx="3.5" ry="2.8" fill="#deb887" transform="rotate(-20 245 100)" opacity="0.8"/>
+  <ellipse cx="205" cy="180" rx="4.2" ry="3.2" fill="#deb887" transform="rotate(40 205 180)" opacity="0.9"/>
+  
+  <!-- Date pieces -->
+  <ellipse cx="165" cy="125" rx="3" ry="5" fill="url(#dateGrad)" transform="rotate(25 165 125)" opacity="0.8"/>
+  <ellipse cx="235" cy="110" rx="2.8" ry="4.5" fill="url(#dateGrad)" transform="rotate(-15 235 110)" opacity="0.7"/>
+  <ellipse cx="195" cy="190" rx="3.2" ry="5.2" fill="url(#dateGrad)" transform="rotate(35 195 190)" opacity="0.8"/>
+  
+  <text x="200" y="50" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#654321" opacity="0.8">Walnut Date Symphony</text>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background: linear-gradient(135deg, #f8f6f0 0%, #ede8dc 100%);">
+  <defs>
+    <radialGradient id="cookieRealistic" cx="40%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#f4e4bc;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#e6d3a3;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#d4c294;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c4a373;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="darkCookie" cx="40%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#e6d3a3;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#d4c294;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#c4a373;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a67c5a;stop-opacity:1" />
+    </radialGradient>
+    <filter id="dropShadow">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#8b7355" flood-opacity="0.4"/>
+    </filter>
+    <filter id="innerShadow">
+      <feFlood flood-color="#a67c5a" flood-opacity="0.3"/>
+      <feComposite in="SourceGraphic" in2="flood" operator="multiply"/>
+    </filter>
+  </defs>
+  
+  <!-- Marble surface texture -->
+  <rect width="800" height="600" fill="#f8f6f0"/>
+  <ellipse cx="200" cy="500" rx="150" ry="20" fill="#e0ddd0" opacity="0.3"/>
+  <ellipse cx="600" cy="520" rx="120" ry="15" fill="#e0ddd0" opacity="0.3"/>
+  
+  <!-- Cookie 1 - Traditional round kulcha with fork marks -->
+  <ellipse cx="200" cy="200" rx="85" ry="78" fill="url(#cookieRealistic)" filter="url(#dropShadow)"/>
+  <!-- Fork crosshatch pattern -->
+  <g stroke="#c4a373" stroke-width="2" opacity="0.6">
+    <line x1="140" y1="170" x2="260" y2="170"/>
+    <line x1="140" y1="185" x2="260" y2="185"/>
+    <line x1="140" y1="200" x2="260" y2="200"/>
+    <line x1="140" y1="215" x2="260" y2="215"/>
+    <line x1="140" y1="230" x2="260" y2="230"/>
+    <line x1="170" y1="140" x2="170" y2="260"/>
+    <line x1="185" y1="140" x2="185" y2="260"/>
+    <line x1="200" y1="140" x2="200" y2="260"/>
+    <line x1="215" y1="140" x2="215" y2="260"/>
+    <line x1="230" y1="140" x2="230" y2="260"/>
+  </g>
+  <!-- Center pistachio -->
+  <ellipse cx="200" cy="200" rx="8" ry="12" fill="#90ee90" transform="rotate(15 200 200)"/>
+  <ellipse cx="200" cy="200" rx="6" ry="10" fill="#228b22" transform="rotate(15 200 200)" opacity="0.7"/>
+  
+  <!-- Cookie 2 - Slightly darker, different angle -->
+  <ellipse cx="450" cy="180" rx="82" ry="75" fill="url(#darkCookie)" filter="url(#dropShadow)" transform="rotate(25 450 180)"/>
+  <!-- Fork marks -->
+  <g stroke="#a67c5a" stroke-width="2" opacity="0.6" transform="rotate(25 450 180)">
+    <line x1="395" y1="155" x2="505" y2="155"/>
+    <line x1="395" y1="170" x2="505" y2="170"/>
+    <line x1="395" y1="185" x2="505" y2="185"/>
+    <line x1="395" y1="200" x2="505" y2="200"/>
+    <line x1="420" y1="130" x2="420" y2="230"/>
+    <line x1="435" y1="130" x2="435" y2="230"/>
+    <line x1="450" y1="130" x2="450" y2="230"/>
+    <line x1="465" y1="130" x2="465" y2="230"/>
+    <line x1="480" y1="130" x2="480" y2="230"/>
+  </g>
+  <!-- Center pistachio -->
+  <ellipse cx="450" cy="180" rx="8" ry="12" fill="#90ee90" transform="rotate(40 450 180)"/>
+  
+  <!-- Cookie 3 - Golden brown -->
+  <ellipse cx="320" cy="320" rx="88" ry="80" fill="url(#cookieRealistic)" filter="url(#dropShadow)" transform="rotate(-10 320 320)"/>
+  <!-- Fork pattern -->
+  <g stroke="#c4a373" stroke-width="2" opacity="0.6" transform="rotate(-10 320 320)">
+    <line x1="255" y1="290" x2="385" y2="290"/>
+    <line x1="255" y1="305" x2="385" y2="305"/>
+    <line x1="255" y1="320" x2="385" y2="320"/>
+    <line x1="255" y1="335" x2="385" y2="335"/>
+    <line x1="255" y1="350" x2="385" y2="350"/>
+    <line x1="290" y1="260" x2="290" y2="380"/>
+    <line x1="305" y1="260" x2="305" y2="380"/>
+    <line x1="320" y1="260" x2="320" y2="380"/>
+    <line x1="335" y1="260" x2="335" y2="380"/>
+    <line x1="350" y1="260" x2="350" y2="380"/>
+  </g>
+  <!-- Center decoration -->
+  <ellipse cx="320" cy="320" rx="8" ry="12" fill="#90ee90" transform="rotate(5 320 320)"/>
+  
+  <!-- Cookie 4 - Smaller, in background -->
+  <ellipse cx="600" cy="280" rx="75" ry="70" fill="url(#darkCookie)" filter="url(#dropShadow)" transform="rotate(45 600 280)"/>
+  <!-- Simple fork marks -->
+  <g stroke="#a67c5a" stroke-width="1.5" opacity="0.5" transform="rotate(45 600 280)">
+    <line x1="545" y1="260" x2="655" y2="260"/>
+    <line x1="545" y1="275" x2="655" y2="275"/>
+    <line x1="545" y1="290" x2="655" y2="290"/>
+    <line x1="545" y1="305" x2="655" y2="305"/>
+    <line x1="580" y1="225" x2="580" y2="335"/>
+    <line x1="595" y1="225" x2="595" y2="335"/>
+    <line x1="610" y1="225" x2="610" y2="335"/>
+    <line x1="625" y1="225" x2="625" y2="335"/>
+  </g>
+  
+  <!-- Cookie 5 - Very realistic front cookie -->
+  <ellipse cx="150" cy="400" rx="95" ry="88" fill="url(#cookieRealistic)" filter="url(#dropShadow)"/>
+  <!-- Detailed fork crosshatch -->
+  <g stroke="#c4a373" stroke-width="2.5" opacity="0.7">
+    <line x1="80" y1="365" x2="220" y2="365"/>
+    <line x1="80" y1="380" x2="220" y2="380"/>
+    <line x1="80" y1="395" x2="220" y2="395"/>
+    <line x1="80" y1="410" x2="220" y2="410"/>
+    <line x1="80" y1="425" x2="220" y2="425"/>
+    <line x1="80" y1="440" x2="220" y2="440"/>
+    <line x1="115" y1="330" x2="115" y2="470"/>
+    <line x1="130" y1="330" x2="130" y2="470"/>
+    <line x1="145" y1="330" x2="145" y2="470"/>
+    <line x1="160" y1="330" x2="160" y2="470"/>
+    <line x1="175" y1="330" x2="175" y2="470"/>
+    <line x1="190" y1="330" x2="190" y2="470"/>
+  </g>
+  <!-- Large center pistachio with detail -->
+  <ellipse cx="150" cy="400" rx="10" ry="15" fill="#90ee90"/>
+  <ellipse cx="150" cy="400" rx="8" ry="12" fill="#228b22" opacity="0.8"/>
+  <ellipse cx="148" cy="396" rx="3" ry="5" fill="#98fb98"/>
+  
+  <!-- Scattered crumbs for realism -->
+  <circle cx="280" cy="450" r="3" fill="#d4c294" opacity="0.6"/>
+  <circle cx="520" cy="380" r="2" fill="#c4a373" opacity="0.5"/>
+  <circle cx="180" cy="320" r="2.5" fill="#e6d3a3" opacity="0.7"/>
+  <circle cx="420" cy="420" r="1.5" fill="#d4c294" opacity="0.4"/>
+  
+  <!-- Authentic textures on cookies -->
+  <g opacity="0.3">
+    <circle cx="180" cy="180" r="2" fill="#a67c5a"/>
+    <circle cx="220" cy="210" r="1.5" fill="#a67c5a"/>
+    <circle cx="470" cy="160" r="2" fill="#8b7355"/>
+    <circle cx="430" cy="195" r="1.5" fill="#8b7355"/>
+    <circle cx="340" cy="300" r="2" fill="#a67c5a"/>
+    <circle cx="300" cy="340" r="1.5" fill="#a67c5a"/>
+    <circle cx="130" cy="380" r="2" fill="#a67c5a"/>
+    <circle cx="170" cy="420" r="1.5" fill="#a67c5a"/>
+  </g>
+</svg>

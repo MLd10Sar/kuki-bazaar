@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background: linear-gradient(135deg, #fdf8f0 0%, #f5e6d3 100%);">
+  <defs>
+    <radialGradient id="saffronCookie" cx="40%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#f4e6a1;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#e8c547;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#daa520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </radialGradient>
+    <filter id="cookieShadow">
+      <feDropShadow dx="5" dy="10" stdDeviation="8" flood-color="#8b4513" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Wooden board background -->
+  <rect width="800" height="600" fill="#f5e6d3"/>
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="800" y2="105" stroke="#8b4513" stroke-width="2"/>
+    <line x1="0" y1="200" x2="800" y2="198" stroke="#8b4513" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="305" stroke="#8b4513" stroke-width="2"/>
+    <line x1="0" y1="400" x2="800" y2="395" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- Golden saffron cookies with rose water details -->
+  <ellipse cx="200" cy="180" rx="75" ry="65" fill="url(#saffronCookie)" filter="url(#cookieShadow)"/>
+  <ellipse cx="420" cy="160" rx="72" ry="62" fill="url(#saffronCookie)" filter="url(#cookieShadow)" transform="rotate(20 420 160)"/>
+  <ellipse cx="300" cy="300" rx="78" ry="68" fill="url(#saffronCookie)" filter="url(#cookieShadow)" transform="rotate(-15 300 300)"/>
+  <ellipse cx="150" cy="400" rx="80" ry="70" fill="url(#saffronCookie)" filter="url(#cookieShadow)"/>
+  <ellipse cx="550" cy="350" rx="70" ry="60" fill="url(#saffronCookie)" filter="url(#cookieShadow)" transform="rotate(35 550 350)"/>
+  
+  <!-- Saffron threads -->
+  <g stroke="#ff4500" stroke-width="1.5" opacity="0.8">
+    <path d="M180 160 Q190 155 200 165" fill="none"/>
+    <path d="M210 190 Q220 185 230 195" fill="none"/>
+    <path d="M400 145 Q410 140 420 150" fill="none"/>
+    <path d="M430 175 Q440 170 450 180" fill="none"/>
+    <path d="M280 285 Q290 280 300 290" fill="none"/>
+    <path d="M315 315 Q325 310 335 320" fill="none"/>
+  </g>
+  
+  <!-- Rose petals -->
+  <ellipse cx="195" cy="175" rx="4" ry="6" fill="#ff69b4" opacity="0.7" transform="rotate(30 195 175)"/>
+  <ellipse cx="415" cy="155" rx="3.5" ry="5" fill="#dc143c" opacity="0.6" transform="rotate(-20 415 155)"/>
+  <ellipse cx="295" cy="295" rx="4" ry="6" fill="#ff69b4" opacity="0.7" transform="rotate(45 295 295)"/>
+  <ellipse cx="155" cy="395" rx="3.5" ry="5" fill="#dc143c" opacity="0.6" transform="rotate(-30 155 395)"/>
+  
+  <!-- Texture details -->
+  <g opacity="0.4">
+    <circle cx="185" cy="165" r="2" fill="#b8860b"/>
+    <circle cx="205" cy="185" r="1.5" fill="#b8860b"/>
+    <circle cx="435" cy="145" r="2" fill="#b8860b"/>
+    <circle cx="405" cy="170" r="1.5" fill="#b8860b"/>
+    <circle cx="285" cy="285" r="2" fill="#b8860b"/>
+    <circle cx="315" cy="305" r="1.5" fill="#b8860b"/>
+    <circle cx="135" cy="385" r="2" fill="#b8860b"/>
+    <circle cx="165" cy="405" r="1.5" fill="#b8860b"/>
+    <circle cx="535" cy="335" r="2" fill="#b8860b"/>
+    <circle cx="565" cy="355" r="1.5" fill="#b8860b"/>
+  </g>
+</svg>
