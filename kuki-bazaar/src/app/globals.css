@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* Afghan-inspired color palette */
@@ -17,20 +19,6 @@
   --accent-tertiary: var(--pomegranate);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-saffron: var(--saffron);
-  --color-pomegranate: var(--pomegranate);
-  --color-turquoise: var(--turquoise);
-  --color-desert-sand: var(--desert-sand);
-  --color-deep-red: var(--deep-red);
-  --color-warm-white: var(--warm-white);
-  --color-charcoal: var(--charcoal);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--charcoal);
@@ -38,30 +26,34 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), sans-serif;
+  }
 }
 
 /* Afghan pattern inspired decorative elements */
-.afghan-pattern {
-  background-image: 
-    radial-gradient(circle at 25% 25%, var(--saffron) 2px, transparent 2px),
-    radial-gradient(circle at 75% 75%, var(--turquoise) 2px, transparent 2px);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-}
+@layer components {
+  .afghan-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, var(--saffron) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, var(--turquoise) 2px, transparent 2px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+  }
 
-.gradient-afghan {
-  background: linear-gradient(135deg, var(--saffron) 0%, var(--desert-sand) 50%, var(--turquoise) 100%);
-}
+  .gradient-afghan {
+    background: linear-gradient(135deg, var(--saffron) 0%, var(--desert-sand) 50%, var(--turquoise) 100%);
+  }
 
-.text-gradient {
-  background: linear-gradient(135deg, var(--pomegranate) 0%, var(--saffron) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  .text-gradient {
+    background: linear-gradient(135deg, var(--pomegranate) 0%, var(--saffron) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 /* Sparkle animation for special effects */
