@@ -1,30 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  
-  // Fix workspace root detection
-  outputFileTracingRoot: process.cwd(),
-  
+  // Essential configurations only
   images: {
-    dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    unoptimized: false,
     domains: ['images.unsplash.com'],
+    unoptimized: false,
   },
   
-  // Ensure static export works properly
-  trailingSlash: false,
+  // Disable problematic features for Vercel
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   
-  // Build optimizations - disable ESLint during build temporarily
   typescript: {
     ignoreBuildErrors: false,
   },
   
-  eslint: {
-    ignoreDuringBuilds: true, // Temporarily disable ESLint during build
-  },
+  // Ensure proper routing
+  trailingSlash: false,
 };
 
 export default nextConfig;
